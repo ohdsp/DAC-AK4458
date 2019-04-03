@@ -1,0 +1,323 @@
+EESchema Schematic File Version 4
+LIBS:DAC-AK4458-1.0-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title "DAC-AK4458 with Passive Output Filters"
+Date "2019-04-03"
+Rev "1.0"
+Comp "Open Hardware DSP Platform - www.ohdsp.org"
+Comment1 "MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE."
+Comment2 "is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF "
+Comment3 "Licensed under the TAPR Open Hardware License (www.tapr.org/OHL). This documentation"
+Comment4 "Copyright Paul Janicki 2019"
+$EndDescr
+$Sheet
+S 1600 5100 1550 2400
+U 5616730E
+F0 "Connectors" 60
+F1 "Connectors.sch" 60
+F2 "MCLK" O R 3150 6150 60 
+F3 "LRCLK" O R 3150 6250 60 
+F4 "BCLK" O R 3150 6350 60 
+F5 "SDATA1" O R 3150 6450 60 
+F6 "SDATA2" O R 3150 6550 60 
+F7 "SDATA3" O R 3150 6650 60 
+F8 "SDATA4" O R 3150 6750 60 
+F9 "SPI_SCLK" O R 3150 5450 60 
+F10 "SPI_MOSI" O R 3150 5550 60 
+F11 "SPI_SS" O R 3150 5650 60 
+F12 "SPI_RST" O R 3150 7300 60 
+F13 "SPI_MUTE" O R 3150 5850 60 
+$EndSheet
+$Sheet
+S 8825 5225 1800 1050
+U 562E6585
+F0 "PowerSupply" 60
+F1 "PowerSupply.sch" 60
+$EndSheet
+$Sheet
+S 2800 1250 2750 3350
+U 563058AB
+F0 "AK4458" 60
+F1 "AK4458.sch" 60
+F2 "DACOUT_LRCLK" I L 2800 1400 60 
+F3 "DACOUT_BCLK" I L 2800 1500 60 
+F4 "DACOUT_SDATA1" I L 2800 1600 60 
+F5 "DACOUT_SDATA2" I L 2800 1700 60 
+F6 "DACOUT_SDATA3" I L 2800 1800 60 
+F7 "MCLK" I L 2800 2700 60 
+F8 "DACOUT_SDATA4" I L 2800 1900 60 
+F9 "OUT_1P" O R 5550 1350 60 
+F10 "OUT_1N" O R 5550 1450 60 
+F11 "OUT_2P" O R 5550 1550 60 
+F12 "OUT_2N" O R 5550 1650 60 
+F13 "OUT_3P" O R 5550 1750 60 
+F14 "OUT_3N" O R 5550 1850 60 
+F15 "OUT_4P" O R 5550 1950 60 
+F16 "OUT_4N" O R 5550 2050 60 
+F17 "OUT_5P" O R 5550 2150 60 
+F18 "OUT_5N" O R 5550 2250 60 
+F19 "OUT_6P" O R 5550 2350 60 
+F20 "OUT_6N" O R 5550 2450 60 
+F21 "OUT_7P" O R 5550 2550 60 
+F22 "OUT_7N" O R 5550 2650 60 
+F23 "OUT_8P" O R 5550 2750 60 
+F24 "OUT_8N" O R 5550 2850 60 
+F25 "DAC_MOSI" I L 2800 3350 60 
+F26 "DAC_CLK" I L 2800 3250 60 
+F27 "DAC_CS" I L 2800 3450 60 
+F28 "RST_IN" I L 2800 3850 60 
+F29 "DAC_MUTE" I L 2800 3650 60 
+$EndSheet
+Text Label 3600 6250 2    59   ~ 6
+LRCLK
+Text Label 3600 6350 2    59   ~ 6
+BCLK
+Text Label 3600 6450 2    59   ~ 6
+SDATA1
+Text Label 3600 6550 2    59   ~ 6
+SDATA2
+Text Label 3600 6650 2    59   ~ 6
+SDATA3
+Text Label 3600 6750 2    59   ~ 6
+SDATA4
+Text Label 2100 1400 0    59   ~ 6
+LRCLK
+Text Label 2100 1500 0    59   ~ 6
+BCLK
+Text Label 2100 1600 0    59   ~ 6
+SDATA1
+Text Label 2100 1700 0    59   ~ 6
+SDATA2
+Text Label 2100 1800 0    59   ~ 6
+SDATA3
+Text Label 2100 1900 0    59   ~ 6
+SDATA4
+Text Label 3600 6150 2    59   ~ 6
+MCLK
+Text Label 2100 2700 0    59   ~ 6
+MCLK
+Wire Wire Line
+	1350 1900 1600 1900
+Wire Wire Line
+	1350 1800 1600 1800
+Connection ~ 1350 1900
+Wire Wire Line
+	2100 1900 2800 1900
+Wire Wire Line
+	2800 1800 2100 1800
+Wire Wire Line
+	2100 1700 2800 1700
+Wire Wire Line
+	2800 1600 2100 1600
+Wire Wire Line
+	2100 1500 2800 1500
+Wire Wire Line
+	2800 1400 2100 1400
+Wire Wire Line
+	3600 6150 3150 6150
+Wire Wire Line
+	3600 6250 3150 6250
+Wire Wire Line
+	3150 6350 3600 6350
+Wire Wire Line
+	3600 6450 3150 6450
+Wire Wire Line
+	3150 6550 3600 6550
+Wire Wire Line
+	3600 6650 3150 6650
+Wire Wire Line
+	3150 6750 3600 6750
+$Sheet
+S 6000 1200 1850 1800
+U 5633C57F
+F0 "AnaloguePassiveFilters" 60
+F1 "AnaloguePassiveFilters.sch" 60
+F2 "P1" I L 6000 1350 60 
+F3 "N1" I L 6000 1450 60 
+F4 "P2" I L 6000 1550 60 
+F5 "N2" I L 6000 1650 60 
+F6 "P3" I L 6000 1750 60 
+F7 "N3" I L 6000 1850 60 
+F8 "P4" I L 6000 1950 60 
+F9 "N4" I L 6000 2050 60 
+F10 "P5" I L 6000 2150 60 
+F11 "N5" I L 6000 2250 60 
+F12 "P6" I L 6000 2350 60 
+F13 "N6" I L 6000 2450 60 
+F14 "P7" I L 6000 2550 60 
+F15 "N7" I L 6000 2650 60 
+F16 "P8" I L 6000 2750 60 
+F17 "N8" I L 6000 2850 60 
+$EndSheet
+Text Notes 575  1075 0    118  ~ 6
+Open Hardware DSP Platform - www.ohdsp.org\nDAC-AK4458 with Passive Output Filters\nRevision 1.0
+Text Notes 4800 5950 0    60   ~ 6
+All digital I/O is 3V3. Use outside this voltage can cause damage.\n\nSee bill of materials for detailed parts information.\nParts with 'N/F' value are NOT FITTED.\n\nTrace impedance on SPI/I2C, MCLK, and I2S is designed for approx 89ohm.\n26AWG ribbon cable used with Ground-Signal-Ground is approx 89ohm.
+Text Label 3600 5550 2    60   ~ 6
+SPI_MOSI
+Text Label 3600 5450 2    60   ~ 6
+SPI_CLK
+Text Label 3600 5650 2    60   ~ 6
+SPI_CS
+Wire Wire Line
+	3150 5450 3600 5450
+Wire Wire Line
+	3600 5550 3150 5550
+Wire Wire Line
+	3150 5650 3600 5650
+Text Label 2100 3350 0    60   ~ 6
+SPI_MOSI
+Text Label 2100 3450 0    60   ~ 6
+SPI_CS
+Wire Wire Line
+	2800 3250 2100 3250
+Wire Wire Line
+	2100 3350 2800 3350
+Wire Wire Line
+	2800 3450 2100 3450
+$Comp
+L MyKiCadLibs-Lib:PIN TP101
+U 1 1 5711E338
+P 3950 5850
+F 0 "TP101" H 4250 5850 40  0000 L CNN
+F 1 "Test point" H 4225 5800 40  0001 L CNN
+F 2 "MyKiCadLibs-Footprints:TP-1mm" H 4290 5740 60  0001 C CNN
+F 3 "" H 4290 5740 60  0000 C CNN
+F 4 "1mm test point" V 4340 5850 40  0001 C CNN "Description"
+	1    3950 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R102
+U 1 1 571724B2
+P 1850 1800
+F 0 "R102" V 1900 1500 40  0000 C CNN
+F 1 "1k" V 1857 1801 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 1780 1800 30  0001 C CNN
+F 3 "" V 1770 1800 30  0000 C CNN
+F 4 "100mW" V 1950 1800 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2095 1800 40  0001 C CNN "Description"
+F 6 "0805" V 2025 1800 40  0001 C CNN "Size"
+F 7 "1%" V 2175 1800 40  0001 C CNN "Tolerance"
+	1    1850 1800
+	0    1    -1   0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R103
+U 1 1 57173998
+P 1850 1900
+F 0 "R103" V 1900 1600 40  0000 C CNN
+F 1 "1k" V 1857 1901 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 1780 1900 30  0001 C CNN
+F 3 "" V 1770 1900 30  0000 C CNN
+F 4 "100mW" V 1950 1900 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2095 1900 40  0001 C CNN "Description"
+F 6 "0805" V 2025 1900 40  0001 C CNN "Size"
+F 7 "1%" V 2175 1900 40  0001 C CNN "Tolerance"
+	1    1850 1900
+	0    1    -1   0   
+$EndComp
+Text Notes 4800 5250 0    118  ~ 6
+Notes:
+$Sheet
+S 4850 6550 1450 950 
+U 592CD480
+F0 "Reset-CAT811" 60
+F1 "Reset-CAT811.sch" 60
+F2 "GLB_RESET" O L 4850 6750 60 
+F3 "RST_IN" I L 4850 7300 60 
+$EndSheet
+Wire Wire Line
+	3150 7300 4850 7300
+Wire Wire Line
+	4850 6750 4300 6750
+Text Label 4300 6750 0    60   ~ 6
+GLB_RST
+Wire Wire Line
+	2800 3850 2100 3850
+Text Label 2100 3850 0    60   ~ 6
+GLB_RST
+$Comp
+L power:GNDD #PWR0101
+U 1 1 5638700A
+P 1350 2200
+F 0 "#PWR0101" H 1350 1950 50  0001 C CNN
+F 1 "GNDD" H 1350 2050 50  0000 C CNN
+F 2 "" H 1350 2200 60  0000 C CNN
+F 3 "" H 1350 2200 60  0000 C CNN
+	1    1350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1700 1350 1800
+Wire Wire Line
+	5550 1350 6000 1350
+Wire Wire Line
+	6000 1450 5550 1450
+Wire Wire Line
+	5550 1550 6000 1550
+Wire Wire Line
+	6000 1650 5550 1650
+Wire Wire Line
+	5550 1750 6000 1750
+Wire Wire Line
+	5550 1850 6000 1850
+Wire Wire Line
+	5550 1950 6000 1950
+Wire Wire Line
+	6000 2050 5550 2050
+Wire Wire Line
+	5550 2150 6000 2150
+Wire Wire Line
+	6000 2250 5550 2250
+Wire Wire Line
+	5550 2350 6000 2350
+Wire Wire Line
+	5550 2450 6000 2450
+Wire Wire Line
+	5550 2550 6000 2550
+Wire Wire Line
+	6000 2650 5550 2650
+Wire Wire Line
+	5550 2750 6000 2750
+Wire Wire Line
+	6000 2850 5550 2850
+Text Label 3600 5850 2    59   ~ 6
+MUTE
+Text Label 2100 3650 0    59   ~ 6
+MUTE
+Wire Wire Line
+	2100 3650 2800 3650
+$Comp
+L MyKiCadLibs-Lib:R R101
+U 1 1 59C5BEC6
+P 1850 1700
+F 0 "R101" V 1900 1400 40  0000 C CNN
+F 1 "1k" V 1857 1701 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 1780 1700 30  0001 C CNN
+F 3 "" V 1770 1700 30  0000 C CNN
+F 4 "100mW" V 1950 1700 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2095 1700 40  0001 C CNN "Description"
+F 6 "0805" V 2025 1700 40  0001 C CNN "Size"
+F 7 "1%" V 2175 1700 40  0001 C CNN "Tolerance"
+	1    1850 1700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1600 1700 1350 1700
+Connection ~ 1350 1800
+Wire Wire Line
+	2100 2700 2800 2700
+Text Label 2100 3250 0    60   ~ 6
+SPI_CLK
+Wire Wire Line
+	1350 1900 1350 2200
+Wire Wire Line
+	1350 1800 1350 1900
+Wire Wire Line
+	3150 5850 3950 5850
+$EndSCHEMATC

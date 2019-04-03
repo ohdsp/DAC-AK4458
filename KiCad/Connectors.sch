@@ -1,0 +1,1146 @@
+EESchema Schematic File Version 4
+LIBS:DAC-AK4458-1.0-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "DAC-AK4458 with Passive Output Filters"
+Date "2019-04-03"
+Rev "1.0"
+Comp "Open Hardware DSP Platform - www.ohdsp.org"
+Comment1 "MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE."
+Comment2 "is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF "
+Comment3 "Licensed under the TAPR Open Hardware License (www.tapr.org/OHL). This documentation"
+Comment4 "Copyright Paul Janicki 2019"
+$EndDescr
+$Comp
+L power:GNDD #PWR0208
+U 1 1 54E4C333
+P 1850 4700
+F 0 "#PWR0208" H 1850 4450 60  0001 C CNN
+F 1 "GNDD" H 1850 4550 60  0000 C CNN
+F 2 "" H 1850 4700 60  0000 C CNN
+F 3 "" H 1850 4700 60  0000 C CNN
+	1    1850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0203
+U 1 1 55002B18
+P 1200 3750
+F 0 "#PWR0203" H 1200 3500 60  0001 C CNN
+F 1 "GNDD" H 1200 3600 60  0000 C CNN
+F 2 "" H 1200 3750 60  0000 C CNN
+F 3 "" H 1200 3750 60  0000 C CNN
+	1    1200 3750
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3400 3100 2    60   Output ~ 6
+MCLK
+Text Notes 8100 3000 0    118  ~ 6
+SPI Connector
+$Comp
+L power:GNDD #PWR0214
+U 1 1 56363071
+P 2000 6450
+F 0 "#PWR0214" H 2000 6200 60  0001 C CNN
+F 1 "GNDD" H 2000 6300 60  0000 C CNN
+F 2 "" H 2000 6450 60  0000 C CNN
+F 3 "" H 2000 6450 60  0000 C CNN
+	1    2000 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0210
+U 1 1 56363083
+P 1200 5500
+F 0 "#PWR0210" H 1200 5250 60  0001 C CNN
+F 1 "GNDD" H 1200 5350 60  0000 C CNN
+F 2 "" H 1200 5500 60  0000 C CNN
+F 3 "" H 1200 5500 60  0000 C CNN
+	1    1200 5500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0207
+U 1 1 5636374B
+P 5200 4650
+F 0 "#PWR0207" H 5200 4400 60  0001 C CNN
+F 1 "GNDD" H 5200 4500 60  0000 C CNN
+F 2 "" H 5200 4650 60  0000 C CNN
+F 3 "" H 5200 4650 60  0000 C CNN
+	1    5200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0204
+U 1 1 5636375D
+P 4400 3750
+F 0 "#PWR0204" H 4400 3500 60  0001 C CNN
+F 1 "GNDD" H 4400 3600 60  0000 C CNN
+F 2 "" H 4400 3750 60  0000 C CNN
+F 3 "" H 4400 3750 60  0000 C CNN
+	1    4400 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0215
+U 1 1 56363863
+P 5200 6450
+F 0 "#PWR0215" H 5200 6200 60  0001 C CNN
+F 1 "GNDD" H 5200 6300 60  0000 C CNN
+F 2 "" H 5200 6450 60  0000 C CNN
+F 3 "" H 5200 6450 60  0000 C CNN
+	1    5200 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0211
+U 1 1 56363875
+P 4400 5500
+F 0 "#PWR0211" H 4400 5250 60  0001 C CNN
+F 1 "GNDD" H 4400 5350 60  0000 C CNN
+F 2 "" H 4400 5500 60  0000 C CNN
+F 3 "" H 4400 5500 60  0000 C CNN
+	1    4400 5500
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3400 3300 2    59   Output ~ 6
+LRCLK
+Text HLabel 3400 3500 2    59   Output ~ 6
+BCLK
+Text HLabel 3400 3700 2    59   Output ~ 6
+SDATA1
+Text HLabel 2950 5450 2    59   Output ~ 6
+SDATA2
+Text HLabel 6100 3700 2    59   Output ~ 6
+SDATA3
+Text HLabel 6100 5450 2    59   Output ~ 6
+SDATA4
+$Comp
+L power:GNDD #PWR0212
+U 1 1 566A4AC1
+P 2850 6100
+F 0 "#PWR0212" H 2850 5850 60  0001 C CNN
+F 1 "GNDD" H 2850 5950 60  0000 C CNN
+F 2 "" H 2850 6100 60  0000 C CNN
+F 3 "" H 2850 6100 60  0000 C CNN
+	1    2850 6100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0206
+U 1 1 5681505B
+P 6000 4550
+F 0 "#PWR0206" H 6000 4300 60  0001 C CNN
+F 1 "GNDD" H 6000 4400 60  0000 C CNN
+F 2 "" H 6000 4550 60  0000 C CNN
+F 3 "" H 6000 4550 60  0000 C CNN
+	1    6000 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0213
+U 1 1 5681564B
+P 6000 6100
+F 0 "#PWR0213" H 6000 5850 60  0001 C CNN
+F 1 "GNDD" H 6000 5950 60  0000 C CNN
+F 2 "" H 6000 6100 60  0000 C CNN
+F 3 "" H 6000 6100 60  0000 C CNN
+	1    6000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0201
+U 1 1 568FFA7B
+P 1750 2300
+F 0 "#PWR0201" H 1750 2050 60  0001 C CNN
+F 1 "GNDD" H 1750 2150 60  0000 C CNN
+F 2 "" H 1750 2300 60  0000 C CNN
+F 3 "" H 1750 2300 60  0000 C CNN
+	1    1750 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0202
+U 1 1 56999239
+P 2050 2750
+F 0 "#PWR0202" H 2050 2500 60  0001 C CNN
+F 1 "GNDD" H 2050 2600 60  0000 C CNN
+F 2 "" H 2050 2750 60  0000 C CNN
+F 3 "" H 2050 2750 60  0000 C CNN
+	1    2050 2750
+	-1   0    0    -1  
+$EndComp
+Text Notes 1200 1250 0    118  ~ 6
+I2S/TDM Connectors
+Text Notes 1200 1900 0    60   ~ 6
+External MCLK
+Text Notes 1200 1550 0    60   ~ 6
+External I2S/TDM audio data. \nOnly PCM SDATA lines are routed.\nI2S and TDM mode configured through jumpers or software control.
+Text HLabel 8600 3600 0    60   Output ~ 6
+SPI_SCLK
+Text HLabel 8600 3700 0    60   Output ~ 6
+SPI_MOSI
+Text HLabel 8600 3800 0    60   Output ~ 6
+SPI_SS
+Text HLabel 8600 4000 0    60   Output ~ 6
+SPI_MUTE
+Text HLabel 8600 3900 0    60   Output ~ 6
+SPI_RST
+$Comp
+L power:GNDD #PWR0205
+U 1 1 56F02E77
+P 10150 4100
+F 0 "#PWR0205" H 10150 3850 60  0001 C CNN
+F 1 "GNDD" H 10150 3950 60  0000 C CNN
+F 2 "" H 10150 4100 60  0000 C CNN
+F 3 "" H 10150 4100 60  0000 C CNN
+	1    10150 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4000 8750 4000
+Wire Wire Line
+	8600 3900 8750 3900
+Wire Wire Line
+	8600 3800 9550 3800
+Wire Wire Line
+	8600 3700 9550 3700
+Wire Wire Line
+	8600 3600 9550 3600
+Wire Wire Line
+	10150 3500 10150 3600
+Wire Wire Line
+	10150 4000 10050 4000
+Wire Wire Line
+	10050 3900 10150 3900
+Connection ~ 10150 4000
+Wire Wire Line
+	10050 3800 10150 3800
+Connection ~ 10150 3900
+Wire Wire Line
+	10050 3700 10150 3700
+Connection ~ 10150 3800
+Wire Wire Line
+	10050 3600 10150 3600
+Connection ~ 10150 3700
+Wire Wire Line
+	10050 3500 10150 3500
+Connection ~ 10150 3600
+Wire Wire Line
+	9550 3900 9250 3900
+Connection ~ 5200 5450
+Connection ~ 2000 5450
+Connection ~ 2450 3100
+Connection ~ 2300 3300
+Connection ~ 2150 3500
+Connection ~ 2000 3700
+Wire Wire Line
+	2050 2750 2050 2650
+Connection ~ 2050 2100
+Wire Wire Line
+	2050 2150 2050 2100
+Connection ~ 1750 2200
+Wire Wire Line
+	1750 2200 1650 2200
+Connection ~ 3150 3100
+Wire Wire Line
+	3150 2100 3150 3100
+Wire Wire Line
+	2700 2100 3150 2100
+Wire Wire Line
+	1650 2100 2050 2100
+Wire Wire Line
+	1750 2000 1750 2200
+Wire Wire Line
+	6000 5050 6000 5150
+Wire Wire Line
+	4950 5250 5350 5250
+Wire Wire Line
+	4950 5150 5350 5150
+Wire Wire Line
+	5350 5050 4950 5050
+Connection ~ 6000 5150
+Wire Wire Line
+	5850 5050 6000 5050
+Connection ~ 6000 5250
+Wire Wire Line
+	5850 5150 6000 5150
+Wire Wire Line
+	5850 5250 6000 5250
+Connection ~ 6000 3400
+Wire Wire Line
+	5850 3300 6000 3300
+Connection ~ 6000 3500
+Wire Wire Line
+	6000 3300 6000 3400
+Wire Wire Line
+	5850 3400 6000 3400
+Wire Wire Line
+	6000 3500 5850 3500
+Wire Wire Line
+	2450 3950 2450 3100
+Connection ~ 2300 4600
+Wire Wire Line
+	2450 4600 2450 4450
+Connection ~ 2850 5150
+Wire Wire Line
+	2700 5050 2850 5050
+Connection ~ 2850 5250
+Wire Wire Line
+	2850 5050 2850 5150
+Wire Wire Line
+	2700 5150 2850 5150
+Wire Wire Line
+	2850 5250 2700 5250
+Wire Wire Line
+	2200 5250 1750 5250
+Wire Wire Line
+	1750 5050 2200 5050
+Wire Wire Line
+	1750 5150 2200 5150
+Connection ~ 4400 5150
+Wire Wire Line
+	4400 5050 4450 5050
+Connection ~ 4400 5250
+Wire Wire Line
+	4400 5150 4450 5150
+Connection ~ 4400 5350
+Wire Wire Line
+	4400 5250 4450 5250
+Connection ~ 4400 5450
+Wire Wire Line
+	4400 5350 4450 5350
+Wire Wire Line
+	4400 5450 4450 5450
+Wire Wire Line
+	4400 5050 4400 5150
+Wire Wire Line
+	5200 6250 5200 6350
+Wire Wire Line
+	5850 5450 6100 5450
+Wire Wire Line
+	4950 5350 5200 5350
+Wire Wire Line
+	5200 5350 5200 5450
+Wire Wire Line
+	5200 5450 5350 5450
+Wire Wire Line
+	4950 5450 5050 5450
+Connection ~ 4400 3400
+Wire Wire Line
+	4400 3300 4450 3300
+Connection ~ 4400 3500
+Wire Wire Line
+	4400 3400 4450 3400
+Connection ~ 4400 3600
+Wire Wire Line
+	4400 3500 4450 3500
+Connection ~ 4400 3700
+Wire Wire Line
+	4400 3600 4450 3600
+Wire Wire Line
+	4400 3700 4450 3700
+Wire Wire Line
+	4400 3300 4400 3400
+Wire Wire Line
+	5200 4450 5200 4550
+Wire Wire Line
+	5850 3700 6100 3700
+Wire Wire Line
+	4950 3700 5050 3700
+Connection ~ 1200 5150
+Wire Wire Line
+	1200 5050 1250 5050
+Connection ~ 1200 5250
+Wire Wire Line
+	1200 5150 1250 5150
+Connection ~ 1200 5350
+Wire Wire Line
+	1200 5250 1250 5250
+Connection ~ 1200 5450
+Wire Wire Line
+	1200 5350 1250 5350
+Wire Wire Line
+	1200 5450 1250 5450
+Wire Wire Line
+	1200 5050 1200 5150
+Wire Wire Line
+	2000 6250 2000 6350
+Wire Wire Line
+	2700 5450 2950 5450
+Wire Wire Line
+	1750 5350 2000 5350
+Wire Wire Line
+	2000 5350 2000 5450
+Wire Wire Line
+	2000 5450 2200 5450
+Wire Wire Line
+	1750 5450 1850 5450
+Wire Wire Line
+	3100 3100 3150 3100
+Wire Wire Line
+	1950 3100 2450 3100
+Wire Wire Line
+	1950 3300 1950 3100
+Connection ~ 1200 3400
+Wire Wire Line
+	1200 3300 1250 3300
+Connection ~ 1200 3500
+Wire Wire Line
+	1200 3400 1250 3400
+Connection ~ 1200 3600
+Wire Wire Line
+	1200 3500 1250 3500
+Connection ~ 1200 3700
+Wire Wire Line
+	1200 3600 1250 3600
+Wire Wire Line
+	1200 3700 1250 3700
+Wire Wire Line
+	1200 3300 1200 3400
+Wire Wire Line
+	2150 4600 2150 4450
+Wire Wire Line
+	1850 4600 2000 4600
+Connection ~ 2000 4600
+Wire Wire Line
+	2300 4600 2300 4450
+Connection ~ 2150 4600
+Wire Wire Line
+	3100 3700 3400 3700
+Wire Wire Line
+	2150 3950 2150 3500
+Wire Wire Line
+	3100 3500 3400 3500
+Wire Wire Line
+	3100 3300 3400 3300
+Wire Wire Line
+	1750 3400 2000 3400
+Wire Wire Line
+	2000 3400 2000 3300
+Wire Wire Line
+	2000 3300 2300 3300
+Wire Wire Line
+	1750 3500 2150 3500
+Wire Wire Line
+	1750 3600 2000 3600
+Wire Wire Line
+	2000 3600 2000 3700
+Wire Wire Line
+	2000 3700 2600 3700
+Wire Wire Line
+	1750 3700 1850 3700
+Wire Wire Line
+	1750 3300 1950 3300
+Wire Wire Line
+	2300 3300 2300 3950
+$Comp
+L MyKiCadLibs-Lib:CONN_02X05 P202
+U 1 1 570D05E6
+P 1500 3500
+F 0 "P202" H 1500 3800 50  0000 C CNN
+F 1 "CONN_02X05" H 1500 3200 50  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:CONN_DIL_2X5_BOX_1MM" H 1500 2300 60  0001 C CNN
+F 3 "" H 1500 2300 60  0000 C CNN
+F 4 "2x5 2.54mm pitch box header" H 1500 3100 40  0001 C CNN "Description"
+	1    1500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:CONN_02X05 P205
+U 1 1 570D1346
+P 1500 5250
+F 0 "P205" H 1500 5550 50  0000 C CNN
+F 1 "CONN_02X05" H 1500 4950 50  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:CONN_DIL_2X5_BOX_1MM" H 1500 4050 60  0001 C CNN
+F 3 "" H 1500 4050 60  0000 C CNN
+F 4 "2x5 2.54mm pitch box header" H 1500 4850 40  0001 C CNN "Description"
+	1    1500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:CONN_02X05 P203
+U 1 1 570D21C1
+P 4700 3500
+F 0 "P203" H 4700 3800 50  0000 C CNN
+F 1 "CONN_02X05" H 4700 3200 50  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:CONN_DIL_2X5_BOX_1MM" H 4700 2300 60  0001 C CNN
+F 3 "" H 4700 2300 60  0000 C CNN
+F 4 "2x5 2.54mm pitch box header" H 4700 3100 40  0001 C CNN "Description"
+	1    4700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:CONN_02X05 P206
+U 1 1 570D240D
+P 4700 5250
+F 0 "P206" H 4700 5550 50  0000 C CNN
+F 1 "CONN_02X05" H 4700 4950 50  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:CONN_DIL_2X5_BOX_1MM" H 4700 4050 60  0001 C CNN
+F 3 "" H 4700 4050 60  0000 C CNN
+F 4 "2x5 2.54mm pitch box header" H 4700 4850 40  0001 C CNN "Description"
+	1    4700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:CONN_02X06 P204
+U 1 1 570D2B46
+P 9800 3750
+F 0 "P204" H 9800 4100 50  0000 C CNN
+F 1 "CONN_02X06" H 9800 3400 50  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:CONN_DIL_2X6_BOX_1MM" H 9800 2550 60  0001 C CNN
+F 3 "" H 9800 2550 60  0000 C CNN
+F 4 "2x6 2.54mm pitch box header" H 9800 3300 40  0001 C CNN "Description"
+	1    9800 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2000 1650 2000
+$Comp
+L MyKiCadLibs-Lib:CONN_3x1 P201
+U 1 1 570D3B81
+P 1650 2000
+F 0 "P201" V 2135 1795 40  0000 C CNN
+F 1 "CONN_3x1" V 2080 1910 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:CONN_SIL_3_1MM" H 1990 1890 60  0001 C CNN
+F 3 "" H 1990 1890 60  0000 C CNN
+F 4 "1x3 2.54mm pitch pin header" H 1900 1700 40  0001 C CNN "Description"
+	1    1650 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R201
+U 1 1 57114C7E
+P 2450 2100
+F 0 "R201" V 2370 2100 40  0000 C CNN
+F 1 "N/F" V 2457 2101 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2380 2100 30  0001 C CNN
+F 3 "" V 2370 2100 30  0000 C CNN
+F 4 "100mW" V 2550 2100 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2695 2100 40  0001 C CNN "Description"
+F 6 "0805" V 2625 2100 40  0001 C CNN "Size"
+F 7 "1%" V 2775 2100 40  0001 C CNN "Tolerance"
+	1    2450 2100
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R202
+U 1 1 571151A6
+P 2050 2400
+F 0 "R202" V 1970 2400 40  0000 C CNN
+F 1 "N/F" V 2057 2401 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 1980 2400 30  0001 C CNN
+F 3 "" V 1970 2400 30  0000 C CNN
+F 4 "100mW" V 2150 2400 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2295 2400 40  0001 C CNN "Description"
+F 6 "0805" V 2225 2400 40  0001 C CNN "Size"
+F 7 "1%" V 2375 2400 40  0001 C CNN "Tolerance"
+	1    2050 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R203
+U 1 1 57115C3D
+P 2850 3100
+F 0 "R203" V 2800 3400 40  0000 C CNN
+F 1 "0" V 2857 3101 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2780 3100 30  0001 C CNN
+F 3 "" V 2770 3100 30  0000 C CNN
+F 4 "100mW" V 2950 3100 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 3095 3100 40  0001 C CNN "Description"
+F 6 "0805" V 3025 3100 40  0001 C CNN "Size"
+F 7 "1%" V 3175 3100 40  0001 C CNN "Tolerance"
+	1    2850 3100
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R204
+U 1 1 57115F44
+P 2850 3300
+F 0 "R204" V 2800 3600 40  0000 C CNN
+F 1 "0" V 2857 3301 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2780 3300 30  0001 C CNN
+F 3 "" V 2770 3300 30  0000 C CNN
+F 4 "100mW" V 2950 3300 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 3095 3300 40  0001 C CNN "Description"
+F 6 "0805" V 3025 3300 40  0001 C CNN "Size"
+F 7 "1%" V 3175 3300 40  0001 C CNN "Tolerance"
+	1    2850 3300
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R207
+U 1 1 57115FCD
+P 2850 3500
+F 0 "R207" V 2800 3800 40  0000 C CNN
+F 1 "0" V 2857 3501 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2780 3500 30  0001 C CNN
+F 3 "" V 2770 3500 30  0000 C CNN
+F 4 "100mW" V 2950 3500 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 3095 3500 40  0001 C CNN "Description"
+F 6 "0805" V 3025 3500 40  0001 C CNN "Size"
+F 7 "1%" V 3175 3500 40  0001 C CNN "Tolerance"
+	1    2850 3500
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R209
+U 1 1 57116055
+P 2850 3700
+F 0 "R209" V 2800 4000 40  0000 C CNN
+F 1 "0" V 2857 3701 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2780 3700 30  0001 C CNN
+F 3 "" V 2770 3700 30  0000 C CNN
+F 4 "100mW" V 2950 3700 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 3095 3700 40  0001 C CNN "Description"
+F 6 "0805" V 3025 3700 40  0001 C CNN "Size"
+F 7 "1%" V 3175 3700 40  0001 C CNN "Tolerance"
+	1    2850 3700
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R214
+U 1 1 57116699
+P 2000 4200
+F 0 "R214" V 1950 4500 40  0000 C CNN
+F 1 "N/F" V 2007 4201 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 1930 4200 30  0001 C CNN
+F 3 "" V 1920 4200 30  0000 C CNN
+F 4 "100mW" V 2100 4200 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2245 4200 40  0001 C CNN "Description"
+F 6 "0805" V 2175 4200 40  0001 C CNN "Size"
+F 7 "1%" V 2325 4200 40  0001 C CNN "Tolerance"
+	1    2000 4200
+	1    0    0    1   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R215
+U 1 1 57116AF4
+P 2150 4200
+F 0 "R215" V 2100 4500 40  0000 C CNN
+F 1 "N/F" V 2157 4201 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2080 4200 30  0001 C CNN
+F 3 "" V 2070 4200 30  0000 C CNN
+F 4 "100mW" V 2250 4200 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2395 4200 40  0001 C CNN "Description"
+F 6 "0805" V 2325 4200 40  0001 C CNN "Size"
+F 7 "1%" V 2475 4200 40  0001 C CNN "Tolerance"
+	1    2150 4200
+	1    0    0    1   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R216
+U 1 1 57116B89
+P 2300 4200
+F 0 "R216" V 2250 4500 40  0000 C CNN
+F 1 "N/F" V 2307 4201 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2230 4200 30  0001 C CNN
+F 3 "" V 2220 4200 30  0000 C CNN
+F 4 "100mW" V 2400 4200 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2545 4200 40  0001 C CNN "Description"
+F 6 "0805" V 2475 4200 40  0001 C CNN "Size"
+F 7 "1%" V 2625 4200 40  0001 C CNN "Tolerance"
+	1    2300 4200
+	1    0    0    1   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R217
+U 1 1 57116C1D
+P 2450 4200
+F 0 "R217" V 2400 4500 40  0000 C CNN
+F 1 "N/F" V 2457 4201 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2380 4200 30  0001 C CNN
+F 3 "" V 2370 4200 30  0000 C CNN
+F 4 "100mW" V 2550 4200 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2695 4200 40  0001 C CNN "Description"
+F 6 "0805" V 2625 4200 40  0001 C CNN "Size"
+F 7 "1%" V 2775 4200 40  0001 C CNN "Tolerance"
+	1    2450 4200
+	1    0    0    1   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R221
+U 1 1 57117A13
+P 2450 5050
+F 0 "R221" V 2400 5350 40  0000 C CNN
+F 1 "10k" V 2457 5051 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2380 5050 30  0001 C CNN
+F 3 "" V 2370 5050 30  0000 C CNN
+F 4 "100mW" V 2550 5050 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2695 5050 40  0001 C CNN "Description"
+F 6 "0805" V 2625 5050 40  0001 C CNN "Size"
+F 7 "1%" V 2775 5050 40  0001 C CNN "Tolerance"
+	1    2450 5050
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R223
+U 1 1 57117DC6
+P 2450 5150
+F 0 "R223" V 2400 5450 40  0000 C CNN
+F 1 "10k" V 2457 5151 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2380 5150 30  0001 C CNN
+F 3 "" V 2370 5150 30  0000 C CNN
+F 4 "100mW" V 2550 5150 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2695 5150 40  0001 C CNN "Description"
+F 6 "0805" V 2625 5150 40  0001 C CNN "Size"
+F 7 "1%" V 2775 5150 40  0001 C CNN "Tolerance"
+	1    2450 5150
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R225
+U 1 1 57117E4A
+P 2450 5250
+F 0 "R225" V 2400 5550 40  0000 C CNN
+F 1 "10k" V 2457 5251 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2380 5250 30  0001 C CNN
+F 3 "" V 2370 5250 30  0000 C CNN
+F 4 "100mW" V 2550 5250 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2695 5250 40  0001 C CNN "Description"
+F 6 "0805" V 2625 5250 40  0001 C CNN "Size"
+F 7 "1%" V 2775 5250 40  0001 C CNN "Tolerance"
+	1    2450 5250
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R227
+U 1 1 57117F9C
+P 2450 5450
+F 0 "R227" V 2400 5750 40  0000 C CNN
+F 1 "0" V 2457 5451 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 2380 5450 30  0001 C CNN
+F 3 "" V 2370 5450 30  0000 C CNN
+F 4 "100mW" V 2550 5450 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2695 5450 40  0001 C CNN "Description"
+F 6 "0805" V 2625 5450 40  0001 C CNN "Size"
+F 7 "1%" V 2775 5450 40  0001 C CNN "Tolerance"
+	1    2450 5450
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R230
+U 1 1 57118154
+P 2000 6000
+F 0 "R230" V 1950 6250 40  0000 C CNN
+F 1 "N/F" V 2007 6001 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 1930 6000 30  0001 C CNN
+F 3 "" V 1920 6000 30  0000 C CNN
+F 4 "100mW" V 2100 6000 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2245 6000 40  0001 C CNN "Description"
+F 6 "0805" V 2175 6000 40  0001 C CNN "Size"
+F 7 "1%" V 2325 6000 40  0001 C CNN "Tolerance"
+	1    2000 6000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5200 3700 5350 3700
+Wire Wire Line
+	5200 3600 5200 3700
+Wire Wire Line
+	4950 3600 5200 3600
+Wire Wire Line
+	5350 3300 4950 3300
+Wire Wire Line
+	4950 3400 5350 3400
+Wire Wire Line
+	4950 3500 5350 3500
+Connection ~ 5200 3700
+$Comp
+L MyKiCadLibs-Lib:R R205
+U 1 1 5711A110
+P 5600 3300
+F 0 "R205" V 5550 3600 40  0000 C CNN
+F 1 "10k" V 5607 3301 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5530 3300 30  0001 C CNN
+F 3 "" V 5520 3300 30  0000 C CNN
+F 4 "100mW" V 5700 3300 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5845 3300 40  0001 C CNN "Description"
+F 6 "0805" V 5775 3300 40  0001 C CNN "Size"
+F 7 "1%" V 5925 3300 40  0001 C CNN "Tolerance"
+	1    5600 3300
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R206
+U 1 1 5711A1AE
+P 5600 3400
+F 0 "R206" V 5550 3700 40  0000 C CNN
+F 1 "10k" V 5607 3401 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5530 3400 30  0001 C CNN
+F 3 "" V 5520 3400 30  0000 C CNN
+F 4 "100mW" V 5700 3400 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5845 3400 40  0001 C CNN "Description"
+F 6 "0805" V 5775 3400 40  0001 C CNN "Size"
+F 7 "1%" V 5925 3400 40  0001 C CNN "Tolerance"
+	1    5600 3400
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R208
+U 1 1 5711A21D
+P 5600 3500
+F 0 "R208" V 5550 3800 40  0000 C CNN
+F 1 "10k" V 5607 3501 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5530 3500 30  0001 C CNN
+F 3 "" V 5520 3500 30  0000 C CNN
+F 4 "100mW" V 5700 3500 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5845 3500 40  0001 C CNN "Description"
+F 6 "0805" V 5775 3500 40  0001 C CNN "Size"
+F 7 "1%" V 5925 3500 40  0001 C CNN "Tolerance"
+	1    5600 3500
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R222
+U 1 1 5711A28F
+P 5600 5050
+F 0 "R222" V 5550 5350 40  0000 C CNN
+F 1 "10k" V 5607 5051 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5530 5050 30  0001 C CNN
+F 3 "" V 5520 5050 30  0000 C CNN
+F 4 "100mW" V 5700 5050 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5845 5050 40  0001 C CNN "Description"
+F 6 "0805" V 5775 5050 40  0001 C CNN "Size"
+F 7 "1%" V 5925 5050 40  0001 C CNN "Tolerance"
+	1    5600 5050
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R224
+U 1 1 5711A330
+P 5600 5150
+F 0 "R224" V 5550 5450 40  0000 C CNN
+F 1 "10k" V 5607 5151 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5530 5150 30  0001 C CNN
+F 3 "" V 5520 5150 30  0000 C CNN
+F 4 "100mW" V 5700 5150 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5845 5150 40  0001 C CNN "Description"
+F 6 "0805" V 5775 5150 40  0001 C CNN "Size"
+F 7 "1%" V 5925 5150 40  0001 C CNN "Tolerance"
+	1    5600 5150
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R226
+U 1 1 5711A3A8
+P 5600 5250
+F 0 "R226" V 5550 5550 40  0000 C CNN
+F 1 "10k" V 5607 5251 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5530 5250 30  0001 C CNN
+F 3 "" V 5520 5250 30  0000 C CNN
+F 4 "100mW" V 5700 5250 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5845 5250 40  0001 C CNN "Description"
+F 6 "0805" V 5775 5250 40  0001 C CNN "Size"
+F 7 "1%" V 5925 5250 40  0001 C CNN "Tolerance"
+	1    5600 5250
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R210
+U 1 1 5711A423
+P 5600 3700
+F 0 "R210" V 5550 3950 40  0000 C CNN
+F 1 "0" V 5607 3701 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5530 3700 30  0001 C CNN
+F 3 "" V 5520 3700 30  0000 C CNN
+F 4 "100mW" V 5700 3700 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5845 3700 40  0001 C CNN "Description"
+F 6 "0805" V 5775 3700 40  0001 C CNN "Size"
+F 7 "1%" V 5925 3700 40  0001 C CNN "Tolerance"
+	1    5600 3700
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R228
+U 1 1 5711A4E5
+P 5600 5450
+F 0 "R228" V 5550 5700 40  0000 C CNN
+F 1 "0" V 5607 5451 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5530 5450 30  0001 C CNN
+F 3 "" V 5520 5450 30  0000 C CNN
+F 4 "100mW" V 5700 5450 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5845 5450 40  0001 C CNN "Description"
+F 6 "0805" V 5775 5450 40  0001 C CNN "Size"
+F 7 "1%" V 5925 5450 40  0001 C CNN "Tolerance"
+	1    5600 5450
+	0    -1   1    0   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R219
+U 1 1 5711A59C
+P 5200 4200
+F 0 "R219" V 5150 4450 40  0000 C CNN
+F 1 "N/F" V 5207 4201 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5130 4200 30  0001 C CNN
+F 3 "" V 5120 4200 30  0000 C CNN
+F 4 "100mW" V 5300 4200 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5445 4200 40  0001 C CNN "Description"
+F 6 "0805" V 5375 4200 40  0001 C CNN "Size"
+F 7 "1%" V 5525 4200 40  0001 C CNN "Tolerance"
+	1    5200 4200
+	1    0    0    1   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R232
+U 1 1 5711A670
+P 5200 6000
+F 0 "R232" V 5150 6250 40  0000 C CNN
+F 1 "N/F" V 5207 6001 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 5130 6000 30  0001 C CNN
+F 3 "" V 5120 6000 30  0000 C CNN
+F 4 "100mW" V 5300 6000 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5445 6000 40  0001 C CNN "Description"
+F 6 "0805" V 5375 6000 40  0001 C CNN "Size"
+F 7 "1%" V 5525 6000 40  0001 C CNN "Tolerance"
+	1    5200 6000
+	1    0    0    1   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R211
+U 1 1 5711B075
+P 9000 3900
+F 0 "R211" V 8950 4200 40  0000 C CNN
+F 1 "0" V 9007 3901 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 8930 3900 30  0001 C CNN
+F 3 "" V 8920 3900 30  0000 C CNN
+F 4 "100mW" V 9100 3900 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 9245 3900 40  0001 C CNN "Description"
+F 6 "0805" V 9175 3900 40  0001 C CNN "Size"
+F 7 "1%" V 9325 3900 40  0001 C CNN "Tolerance"
+	1    9000 3900
+	0    -1   1    0   
+$EndComp
+Text Notes 8100 3150 0    60   ~ 6
+For software control
+Text Notes 1200 900  0    118  ~ 6
+Connectors
+Wire Wire Line
+	1850 3700 1850 3950
+$Comp
+L MyKiCadLibs-Lib:R R213
+U 1 1 59A16716
+P 1850 4200
+F 0 "R213" V 1800 4500 40  0000 C CNN
+F 1 "1k" V 1857 4201 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 1780 4200 30  0001 C CNN
+F 3 "" V 1770 4200 30  0000 C CNN
+F 4 "100mW" V 1950 4200 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2095 4200 40  0001 C CNN "Description"
+F 6 "0805" V 2025 4200 40  0001 C CNN "Size"
+F 7 "1%" V 2175 4200 40  0001 C CNN "Tolerance"
+	1    1850 4200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1850 4450 1850 4600
+Wire Wire Line
+	2000 4450 2000 4600
+Connection ~ 1850 4600
+Wire Wire Line
+	5050 3700 5050 3950
+Wire Wire Line
+	5050 4450 5050 4550
+Wire Wire Line
+	5050 4550 5200 4550
+Connection ~ 5200 4550
+Wire Wire Line
+	1850 6250 1850 6350
+Wire Wire Line
+	1850 6350 2000 6350
+Connection ~ 2000 6350
+Wire Wire Line
+	5050 5450 5050 5750
+Wire Wire Line
+	5050 6250 5050 6350
+Wire Wire Line
+	5050 6350 5200 6350
+Connection ~ 5200 6350
+$Comp
+L MyKiCadLibs-Lib:R R218
+U 1 1 59C051A5
+P 5050 4200
+F 0 "R218" V 5000 4500 40  0000 C CNN
+F 1 "1k" V 5057 4201 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 4980 4200 30  0001 C CNN
+F 3 "" V 4970 4200 30  0000 C CNN
+F 4 "100mW" V 5150 4200 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5295 4200 40  0001 C CNN "Description"
+F 6 "0805" V 5225 4200 40  0001 C CNN "Size"
+F 7 "1%" V 5375 4200 40  0001 C CNN "Tolerance"
+	1    5050 4200
+	1    0    0    1   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R231
+U 1 1 59C055DE
+P 5050 6000
+F 0 "R231" V 5000 6300 40  0000 C CNN
+F 1 "1k" V 5057 6001 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 4980 6000 30  0001 C CNN
+F 3 "" V 4970 6000 30  0000 C CNN
+F 4 "100mW" V 5150 6000 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 5295 6000 40  0001 C CNN "Description"
+F 6 "0805" V 5225 6000 40  0001 C CNN "Size"
+F 7 "1%" V 5375 6000 40  0001 C CNN "Tolerance"
+	1    5050 6000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1850 5450 1850 5750
+$Comp
+L MyKiCadLibs-Lib:R R229
+U 1 1 59C057F7
+P 1850 6000
+F 0 "R229" V 1800 6300 40  0000 C CNN
+F 1 "1k" V 1857 6001 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 1780 6000 30  0001 C CNN
+F 3 "" V 1770 6000 30  0000 C CNN
+F 4 "100mW" V 1950 6000 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 2095 6000 40  0001 C CNN "Description"
+F 6 "0805" V 2025 6000 40  0001 C CNN "Size"
+F 7 "1%" V 2175 6000 40  0001 C CNN "Tolerance"
+	1    1850 6000
+	1    0    0    1   
+$EndComp
+$Comp
+L MyKiCadLibs-Lib:R R220
+U 1 1 59C3DA4C
+P 9400 4350
+F 0 "R220" V 9350 4650 40  0000 C CNN
+F 1 "1k" V 9407 4351 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 9330 4350 30  0001 C CNN
+F 3 "" V 9320 4350 30  0000 C CNN
+F 4 "100mW" V 9500 4350 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 9645 4350 40  0001 C CNN "Description"
+F 6 "0805" V 9575 4350 40  0001 C CNN "Size"
+F 7 "1%" V 9725 4350 40  0001 C CNN "Tolerance"
+	1    9400 4350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9400 4100 9400 3500
+Wire Wire Line
+	9400 3500 9550 3500
+$Comp
+L power:GNDD #PWR0209
+U 1 1 59C3DC22
+P 9400 4750
+F 0 "#PWR0209" H 9400 4500 60  0001 C CNN
+F 1 "GNDD" H 9400 4600 60  0000 C CNN
+F 2 "" H 9400 4750 60  0000 C CNN
+F 3 "" H 9400 4750 60  0000 C CNN
+	1    9400 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4750 9400 4600
+Wire Wire Line
+	10150 4000 10150 4100
+Wire Wire Line
+	10150 3900 10150 4000
+Wire Wire Line
+	10150 3800 10150 3900
+Wire Wire Line
+	10150 3700 10150 3800
+Wire Wire Line
+	10150 3600 10150 3700
+Wire Wire Line
+	5200 5450 5200 5750
+Wire Wire Line
+	2000 5450 2000 5750
+Wire Wire Line
+	2450 3100 2600 3100
+Wire Wire Line
+	2300 3300 2600 3300
+Wire Wire Line
+	2150 3500 2600 3500
+Wire Wire Line
+	2000 3700 2000 3950
+Wire Wire Line
+	2050 2100 2200 2100
+Wire Wire Line
+	1750 2200 1750 2300
+Wire Wire Line
+	3150 3100 3400 3100
+Wire Wire Line
+	6000 5150 6000 5250
+Wire Wire Line
+	6000 5250 6000 6100
+Wire Wire Line
+	6000 3400 6000 3500
+Wire Wire Line
+	6000 3500 6000 4550
+Wire Wire Line
+	2300 4600 2450 4600
+Wire Wire Line
+	2850 5150 2850 5250
+Wire Wire Line
+	2850 5250 2850 6100
+Wire Wire Line
+	4400 5150 4400 5250
+Wire Wire Line
+	4400 5250 4400 5350
+Wire Wire Line
+	4400 5350 4400 5450
+Wire Wire Line
+	4400 5450 4400 5500
+Wire Wire Line
+	4400 3400 4400 3500
+Wire Wire Line
+	4400 3500 4400 3600
+Wire Wire Line
+	4400 3600 4400 3700
+Wire Wire Line
+	4400 3700 4400 3750
+Wire Wire Line
+	1200 5150 1200 5250
+Wire Wire Line
+	1200 5250 1200 5350
+Wire Wire Line
+	1200 5350 1200 5450
+Wire Wire Line
+	1200 5450 1200 5500
+Wire Wire Line
+	1200 3400 1200 3500
+Wire Wire Line
+	1200 3500 1200 3600
+Wire Wire Line
+	1200 3600 1200 3700
+Wire Wire Line
+	1200 3700 1200 3750
+Wire Wire Line
+	2000 4600 2150 4600
+Wire Wire Line
+	2150 4600 2300 4600
+Wire Wire Line
+	5200 3700 5200 3950
+Wire Wire Line
+	1850 4600 1850 4700
+Wire Wire Line
+	5200 4550 5200 4650
+Wire Wire Line
+	2000 6350 2000 6450
+Wire Wire Line
+	5200 6350 5200 6450
+$Comp
+L MyKiCadLibs-Lib:R R212
+U 1 1 5CA675B6
+P 9000 4000
+F 0 "R212" V 8950 4300 40  0000 C CNN
+F 1 "0" V 9007 4001 40  0000 C CNN
+F 2 "MyKiCadLibs-Footprints:SMD-0805" V 8930 4000 30  0001 C CNN
+F 3 "" V 8920 4000 30  0000 C CNN
+F 4 "100mW" V 9100 4000 40  0001 C CNN "Power"
+F 5 "Thick or thin film resistor" V 9245 4000 40  0001 C CNN "Description"
+F 6 "0805" V 9175 4000 40  0001 C CNN "Size"
+F 7 "1%" V 9325 4000 40  0001 C CNN "Tolerance"
+	1    9000 4000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9250 4000 9550 4000
+$EndSCHEMATC
